@@ -1,0 +1,52 @@
+.container {
+   display: flex;
+   object-fit: contain;
+   height: 100%;
+   background: url(/images/bg.png) no-repeat center center fixed;
+   background-size: cover;
+   overflow: hidden;
+
+   > .nav {
+      display: flex;
+      flex-direction: column;
+      margin-left: 54px;
+      height: 100%;
+      align-items: center;
+      justify-content: space-between;
+      > .nav__menu {
+         margin-top: 47px;
+         flex: 1 0 auto;
+         display: flex;
+         > ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            > li {
+               > img {
+                  width: 37px;
+                  height: 33px;
+               }
+            }
+         }
+      }
+      > .break {
+         width: 1px;
+         height: 300px;
+         background-color: #ffffff;
+         margin: 36px 0 19px;
+      }
+      > .nav__social {
+         > ul {
+            margin-bottom: 59px;
+            > li img {
+               width: 32px;
+               height: 32px;
+               margin-bottom: 5px;
+            }
+            > li:last-child img {
+               margin: 0;
+            }
+         }
+      }
+   }
+}
